@@ -78,7 +78,7 @@
     </style>
 </head>
 <body>
-    <audio id="bg-music" loop>
+    <audio id="bg-music" loop muted>
         <source src="https://drive.google.com/uc?export=download&id=1t3bKNpAKqixp-h5hcZ3XCUohizD9JhVK" type="audio/mpeg">
         Your browser does not support the audio element.
     </audio>
@@ -94,6 +94,7 @@
      <script>
         function playMusic() {
             let audio = document.getElementById("bg-music");
+            audio.muted = false;
             audio.play().catch(error => {
                 console.log("Autoplay was prevented: ", error);
             });
