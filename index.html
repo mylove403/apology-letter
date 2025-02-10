@@ -70,34 +70,22 @@
         .play-button:hover {
             background: #cc0000;
         }
-        .song-text {
-            font-size: 16px;
-            color: #ff4d4d;
-            margin-top: 10px;
-        }
     </style>
 </head>
 <body>
-    <audio id="bg-music" loop muted>
-        <source src="https://drive.google.com/uc?export=download&id=1t3bKNpAKqixp-h5hcZ3XCUohizD9JhVK" type="audio/mpeg">
-        Your browser does not support the audio element.
-    </audio>
     <div class="container">
         <h1>I'm Sorry, My Love Aishwarya❤️</h1>
         <div class="message-box">
             My dearest love, I never meant to hurt you, and my heart aches knowing I did. You mean the world to me, and I will do everything in my power to make things right. Please forgive me. You are my everything. I never wanted to make it worse please try to understand how much I need you and if any moment you feel you are not happy, then do what you think. But now it is about us so please think na, please. <span class="heart">❤️</span>
         </div>
         <p>With all my love, forever and always.</p>
-        <button class="play-button" onclick="playMusic()">Play Music</button>
+        <iframe src="https://open.spotify.com/embed/track/2tqIKAq7jGWdt7u6Gb8tRF?utm_source=generator" width="300" height="80" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+
         <p class="song-text">A beautiful song for a beautiful girl</p>
     </div>
-     <script>
-        function playMusic() {
-            let audio = document.getElementById("bg-music");
-            audio.muted = false;
-            audio.play().catch(error => {
-                console.log("Autoplay was prevented: ", error);
-            });
+</body>
+</html>
+        
         }
     </script>
 </body>
