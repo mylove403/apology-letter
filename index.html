@@ -60,10 +60,90 @@
     </style>
 </head>
 <body>
-     <audio autoplay loop>
-        <source src="jogi.mp3" type="audio/mpeg">
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>I'm Sorry, My Love</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(to right, #ffcccc, #ffe6e6);
+            text-align: center;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+        .container {
+            max-width: 600px;
+            background: white;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+            animation: fadeIn 1.5s ease-in-out;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: scale(0.9); }
+            to { opacity: 1; transform: scale(1); }
+        }
+        h1 {
+            color: #ff1a1a;
+            font-size: 28px;
+            margin-bottom: 15px;
+        }
+        .message-box {
+            background: #ff9999;
+            padding: 20px;
+            border-radius: 10px;
+            font-size: 20px;
+            color: white;
+            font-weight: bold;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        p {
+            font-size: 18px;
+            color: #333;
+            margin-top: 20px;
+        }
+        .heart {
+            color: #ff1a1a;
+            font-size: 24px;
+            animation: heartbeat 1.5s infinite;
+        }
+        @keyframes heartbeat {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.2); }
+            100% { transform: scale(1); }
+        }
+    </style>
+</head>
+<body>
+    <audio id="bg-music" loop>
+        <source src="your-music-file.mp3" type="audio/mpeg">
         Your browser does not support the audio element.
     </audio>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            let audio = document.getElementById("bg-music");
+            audio.play().catch(error => {
+                console.log("Autoplay was prevented: ", error);
+            });
+        });
+    </script>
+    <div class="container">
+        <h1>I'm Sorry, My Love ❤️</h1>
+        <div class="message-box">
+            My dearest love, I never meant to hurt you, and my heart aches knowing I did. You mean the world to me, and I will do everything in my power to make things right. Please forgive me. You are my everything. <span class="heart">❤️</span>
+        </div>
+        <p>With all my love, forever and always.</p>
+    </div>
+</body>
+</html>
+
     <div class="container">
         <h1>I'm Sorry, My Love Aishwarya❤️</h1>
         <div class="message-box">
